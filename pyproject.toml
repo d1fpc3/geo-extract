@@ -1,0 +1,59 @@
+[project]
+name = "geo-extract"
+version = "0.1.0"
+description = "Find which businesses an AI assistant named in its answer, in what order, and whether yours was one of them."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Frankie Claridge", email = "frankiepc3@gmail.com" }]
+requires-python = ">=3.11"
+keywords = ["geo", "ai-search", "llm", "entity-matching", "evals", "local-seo"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Typing :: Typed",
+]
+dependencies = [
+    "rapidfuzz>=3.9",
+    "rich>=13.7",
+]
+
+[project.optional-dependencies]
+llm = ["anthropic>=0.40"]
+
+[project.scripts]
+geo-extract = "geo_extract.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/d1fpc3/geo-extract"
+"Production product" = "https://seenrank.com"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+    "mypy>=1.11",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.15,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src"]
+
+[[tool.mypy.overrides]]
+module = ["anthropic", "anthropic.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

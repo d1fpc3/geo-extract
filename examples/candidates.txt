@@ -1,0 +1,6 @@
+# Name | domain | aliases (separated by ;)
+Polar Bear Heating & Air | polarbearair.com
+Harford Comfort Systems | | HCS Heating & Cooling
+Chesapeake Climate Company
+Bayside HVAC
+Ridgeline Mechanical LLC | ridgelinemech.com
