@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Find which businesses an AI assistant named in its answer, in what order, and whether yours was one of them."
 readme = "README.md"
 license = "MIT"
-authors = [{ name = "Frankie Claridge", email = "frankiepc3@gmail.com" }]
+authors = [{ name = "Frankie Claridge", email = "d1fpc3@gmail.com" }]
 requires-python = ">=3.11"
 keywords = ["geo", "ai-search", "llm", "entity-matching", "evals", "local-seo"]
 classifiers = [
