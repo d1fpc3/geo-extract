@@ -100,4 +100,4 @@ The position rule is written down once in [`structure.py`](src/geo_extract/struc
 
 This is a standalone, open version of the extraction step inside [SeenRank](https://seenrank.com), which asks AI engines the questions real customers ask every week and tracks which local businesses get named.
 
-Built by Frankie Claridge. MIT licensed.
+Built by Frank Claridge. MIT licensed.
